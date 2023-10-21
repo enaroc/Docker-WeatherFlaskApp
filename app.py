@@ -3,7 +3,7 @@ import requests
 from fpdf import FPDF
 from flask import Flask,request,render_template
 
-API_KEY = "YOUR-API-KEY-HERE"
+API_KEY = "e8f23cdbdbmsh2c54f960770023ep1432c8jsnd303c6935881"
 API_HOST = "weatherapi-com.p.rapidapi.com"
 API_URL = "https://weatherapi-com.p.rapidapi.com/current.json"
 
@@ -73,4 +73,5 @@ def predict_weather():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #app.run(debug=True)
+    app.run(host='0.0.0.0')
