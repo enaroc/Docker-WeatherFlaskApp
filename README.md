@@ -24,13 +24,17 @@ The more application that are introduced in a system, the bigger the attack surf
 # Deploying Weather Flask App 
 
 - Step 1: Create a new project directory
-    
+
+(On you local machine)
+
     mkdir <directoryname>
     
     cd <directoryname>
 
-- Step 2: Clone the project 
-    
+- Step 2: Clone the project
+
+(Import a copy of the project locally)
+
     git clone https://github.com/sharmaji27/Weather-Flask-App.git
     
     git init
@@ -77,12 +81,12 @@ Import the libraries in your image and Install requirement.txt . In app.py repla
 
 Here are the docker command you can run:
 
-docker build -t <filename> .
+    docker build -t <filename> .
 
-docker images (to view you image)
+    docker images (to view you image)
 
-docker run -d -it -p 5000:5000 --name <containername> <filename>
+    docker run -d -it -p 5000:5000 --name <containername> <filename>
 
-docker ps (to view running containers)
+    docker ps (to view running containers)
 
-docker exec -it <containerID> sh
+    docker exec -it <containerID> sh
